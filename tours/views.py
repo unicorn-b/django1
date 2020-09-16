@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from django.http import HttpResponse, HttpResponseNotFound
+from django.http import HttpResponseNotFound
 
 
 class MainView(TemplateView):
