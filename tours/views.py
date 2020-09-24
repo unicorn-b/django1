@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from django.http import HttpResponseNotFound
+from django.http import HttpResponseNotFound, HttpResponseServerError
 
 
 class MainView(TemplateView):
@@ -19,4 +19,4 @@ def custom_handler404(request, exception):
 
 
 def custom_handler500(request, *args):
-    return HttpResponseNotFound('500')
+    return HttpResponseServerError('500')
